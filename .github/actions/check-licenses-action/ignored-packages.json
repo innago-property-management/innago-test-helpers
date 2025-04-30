@@ -9,5 +9,7 @@
   "FluentAssertions",
   "Bogus",
   "MorseCode.ITask",
-  "System.Private.Uri"
+  "System.Private.Uri",
+  "JUnitTestLogger",
+  "xunit.categories"
 ]
