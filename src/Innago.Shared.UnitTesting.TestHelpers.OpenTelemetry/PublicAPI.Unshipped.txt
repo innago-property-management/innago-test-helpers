@@ -1,0 +1,5 @@
+Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.TraceVerifier
+Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.TraceVerifier.Dispose() -> void
+Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.TraceVerifier.Tracer.get -> OpenTelemetry.Trace.Tracer!
+Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.TraceVerifier.TraceVerifier() -> void
+Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.TraceVerifier.VerifyActivity(System.Linq.Expressions.Expression<System.Func<System.Diagnostics.Activity!, bool>!>! predicate) -> void

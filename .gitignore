@@ -1,0 +1,16 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+build.log
+.DS_store
+spdx
+out
+/.idea/.idea.Innago.Shared.UnitTesting/.idea/.gitignore
+/.idea/.idea.Innago.Shared.UnitTesting/.idea/.name
+/.idea/.idea.Innago.Shared.UnitTesting/.idea/encodings.xml
+/.idea/.idea.Innago.Shared.UnitTesting/.idea/indexLayout.xml
+/.idea/.idea.Innago.Shared.UnitTesting/.idea/material_theme_project_new.xml
+/.idea/.idea.Innago.Shared.UnitTesting/.idea/vcs.xml
+/Innago.Shared.UnitTesting.sln.DotSettings.user

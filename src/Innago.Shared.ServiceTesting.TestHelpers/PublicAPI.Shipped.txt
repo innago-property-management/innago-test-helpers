@@ -1,0 +1,25 @@
+#nullable enable
+abstract ServiceTests.TestDatabaseContextFactoryBase<TContext>.MakeContext(Microsoft.EntityFrameworkCore.DbContextOptions<TContext!>! options) -> TContext!
+abstract Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection! services) -> void
+abstract Innago.Shared.ServiceTesting.TestHelpers.TestDatabaseContextFactoryBase<TContext>.MakeContext(Microsoft.EntityFrameworkCore.DbContextOptions<TContext!>! options) -> TContext!
+ServiceTests.TestDatabaseContextFactoryBase<TContext>
+ServiceTests.TestDatabaseContextFactoryBase<TContext>.CreateDbContext() -> TContext!
+ServiceTests.TestDatabaseContextFactoryBase<TContext>.TestDatabaseContextFactoryBase() -> void
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestBaseBase<TProgram, TDbContextFactory, TDbContext>
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestBaseBase<TProgram, TDbContextFactory, TDbContext>.Dispose() -> void
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestBaseBase<TProgram, TDbContextFactory, TDbContext>.Fixture.get -> AutoFixture.Fixture!
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestBaseBase<TProgram, TDbContextFactory, TDbContext>.ServiceTestBaseBase(Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram!, TDbContextFactory!, TDbContext!>! serviceTestFixture) -> void
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestBaseBase<TProgram, TDbContextFactory, TDbContext>.ServiceTestFixture.get -> Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram!, TDbContextFactory!, TDbContext!>!
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestBaseBase<TProgram, TDbContextFactory, TDbContext>.~ServiceTestBaseBase() -> void
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>.Configuration.get -> Microsoft.Extensions.Configuration.IConfiguration!
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>.DatabaseContextFactory.get -> TDbContextFactory!
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>.Dispose() -> void
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>.GetService<T>() -> T
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>.HttpClient.get -> System.Net.Http.HttpClient!
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>.ServiceTestFixtureBase() -> void
+Innago.Shared.ServiceTesting.TestHelpers.TestDatabaseContextFactoryBase<TContext>
+Innago.Shared.ServiceTesting.TestHelpers.TestDatabaseContextFactoryBase<TContext>.CreateDbContext() -> TContext!
+Innago.Shared.ServiceTesting.TestHelpers.TestDatabaseContextFactoryBase<TContext>.TestDatabaseContextFactoryBase() -> void
+virtual Innago.Shared.ServiceTesting.TestHelpers.ServiceTestBaseBase<TProgram, TDbContextFactory, TDbContext>.Dispose(bool disposing) -> void
+virtual Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>.Dispose(bool disposing) -> void
