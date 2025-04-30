@@ -1,0 +1,4 @@
+ignore:
+  - package:
+      name: System.Private.Uri
+      version: 4.3.0
