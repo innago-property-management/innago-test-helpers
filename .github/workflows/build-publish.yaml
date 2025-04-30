@@ -16,6 +16,7 @@ jobs:
       cosignPassword: ${{ secrets.COSIGN_PASSWORD }}
     with: 
       minimumCoverage: 0
+      testProjectPath: 'tests/UnitTests/UnitTests.csproj'
     permissions:
       attestations: write
       packages: write
