@@ -1,2 +1,2 @@
-static Innago.Shared.UnitTesting.TestHelpers.MethodChecker.VerifyThrowsAsync<TException>(System.Func<System.Threading.Tasks.Task!>! action) -> System.Threading.Tasks.Task<FluentAssertions.Specialized.ExceptionAssertions<TException!>?>!
+static Innago.Shared.UnitTesting.TestHelpers.MethodChecker.VerifyThrowsAsync<TException>(System.Func<System.Threading.Tasks.Task!>! action) -> System.Threading.Tasks.Task<AwesomeAssertions.Specialized.ExceptionAssertions<TException!>?>!
 ~static Innago.Shared.UnitTesting.TestHelpers.PropertyChecker.CheckInitOnly(System.Linq.Expressions.Expression<System.Func<object?>> expression) -> void

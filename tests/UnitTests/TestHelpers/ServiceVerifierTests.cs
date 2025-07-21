@@ -1,6 +1,6 @@
 namespace UnitTests.TestHelpers;
 
-using FluentAssertions;
+using AwesomeAssertions;
 
 using Microsoft.Extensions.DependencyInjection;
 

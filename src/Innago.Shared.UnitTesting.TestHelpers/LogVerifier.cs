@@ -3,7 +3,7 @@ namespace Innago.Shared.UnitTesting.TestHelpers;
 using System;
 using System.Text.RegularExpressions;
 
-using FluentAssertions;
+using AwesomeAssertions;
 
 using JetBrains.Annotations;
 

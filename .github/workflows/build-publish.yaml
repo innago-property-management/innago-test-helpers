@@ -7,6 +7,11 @@ on:
     branches: [ "main" ]
 
   workflow_dispatch:
+    
+permissions: 
+  actions: read
+  contents: write
+
 jobs:
   build:
     uses: innago-property-management/Oui-DELIVER/.github/workflows/build-publish.yml@main

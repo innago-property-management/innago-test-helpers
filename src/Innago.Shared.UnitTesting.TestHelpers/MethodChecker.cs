@@ -7,8 +7,8 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Threading.Tasks;
 
-using FluentAssertions;
-using FluentAssertions.Specialized;
+using AwesomeAssertions;
+using AwesomeAssertions.Specialized;
 
 using JetBrains.Annotations;
 

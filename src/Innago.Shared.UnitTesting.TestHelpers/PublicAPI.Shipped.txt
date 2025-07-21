@@ -5,7 +5,7 @@ static Innago.Shared.UnitTesting.TestHelpers.MethodChecker.VerifyParameter(Syste
 static Innago.Shared.UnitTesting.TestHelpers.MethodChecker.VerifyParameter(System.Linq.Expressions.Expression<System.Func<object?>!>! expression, System.Type! parameterType, string? name = null) -> System.Reflection.ParameterInfo?
 static Innago.Shared.UnitTesting.TestHelpers.MethodChecker.VerifyParameter<TParameter>(System.Linq.Expressions.Expression<System.Func<object?>!>! expression, string! name) -> System.Reflection.ParameterInfo?
 static Innago.Shared.UnitTesting.TestHelpers.MethodChecker.VerifyParameterAttribute<TAttribute>(System.Linq.Expressions.Expression<System.Func<object?>!>! expression, string! parameterName) -> System.Collections.Generic.IEnumerable<TAttribute!>!
-static Innago.Shared.UnitTesting.TestHelpers.MethodChecker.VerifyThrows<TException>(System.Action! action) -> FluentAssertions.Specialized.ExceptionAssertions<TException!>?
+static Innago.Shared.UnitTesting.TestHelpers.MethodChecker.VerifyThrows<TException>(System.Action! action) -> AwesomeAssertions.Specialized.ExceptionAssertions<TException!>?
 static Innago.Shared.UnitTesting.TestHelpers.MethodChecker.VerifyUses<T, TResult>(System.Action! act, Moq.Mock<T!>! mock, System.Linq.Expressions.Expression<System.Func<T!, TResult>!>! expression) -> void
 static Innago.Shared.UnitTesting.TestHelpers.MethodChecker.VerifyUses<T, TResult>(System.Action! act, Moq.Mock<T!>! mock, System.Linq.Expressions.Expression<System.Func<T!, TResult>!>! expression, Moq.Times times) -> void
 static Innago.Shared.UnitTesting.TestHelpers.MethodChecker.VerifyUses<T>(System.Action! act, Moq.Mock<T!>! mock, System.Linq.Expressions.Expression<System.Action<T!>!>! expression) -> void
