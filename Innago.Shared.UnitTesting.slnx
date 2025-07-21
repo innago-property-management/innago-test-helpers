@@ -1,4 +1,5 @@
 ﻿<Solution>
+  <Folder Name="/.github/" />
   <Folder Name="/src/">
     <Project Path="src\Innago.Shared.ServiceTesting.TestHelpers\Innago.Shared.ServiceTesting.TestHelpers.csproj" Type="Classic C#" />
     <Project Path="src\Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry\Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.csproj" Type="Classic C#" />

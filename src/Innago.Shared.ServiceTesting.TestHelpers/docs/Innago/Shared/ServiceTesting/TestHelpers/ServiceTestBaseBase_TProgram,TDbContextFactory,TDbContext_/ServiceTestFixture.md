@@ -1,0 +1,12 @@
+### [Innago\.Shared\.ServiceTesting\.TestHelpers](../index.md 'Innago\.Shared\.ServiceTesting\.TestHelpers').[ServiceTestBaseBase&lt;TProgram,TDbContextFactory,TDbContext&gt;](index.md 'Innago\.Shared\.ServiceTesting\.TestHelpers\.ServiceTestBaseBase\<TProgram,TDbContextFactory,TDbContext\>')
+
+## ServiceTestBaseBase\<TProgram,TDbContextFactory,TDbContext\>\.ServiceTestFixture Property
+
+Gets the ServiceTestFixture\.
+
+```csharp
+protected internal Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram,TDbContextFactory,TDbContext> ServiceTestFixture { protected internal get; }
+```
+
+#### Property Value
+[Innago\.Shared\.ServiceTesting\.TestHelpers\.ServiceTestFixtureBase&lt;](../ServiceTestFixtureBase_TProgram,TDbContextFactory,TDbContext_/index.md 'Innago\.Shared\.ServiceTesting\.TestHelpers\.ServiceTestFixtureBase\<TProgram,TDbContextFactory,TDbContext\>')[TProgram](index.md#Innago.Shared.ServiceTesting.TestHelpers.ServiceTestBaseBase_TProgram,TDbContextFactory,TDbContext_.TProgram 'Innago\.Shared\.ServiceTesting\.TestHelpers\.ServiceTestBaseBase\<TProgram,TDbContextFactory,TDbContext\>\.TProgram')[,](../ServiceTestFixtureBase_TProgram,TDbContextFactory,TDbContext_/index.md 'Innago\.Shared\.ServiceTesting\.TestHelpers\.ServiceTestFixtureBase\<TProgram,TDbContextFactory,TDbContext\>')[TDbContextFactory](index.md#Innago.Shared.ServiceTesting.TestHelpers.ServiceTestBaseBase_TProgram,TDbContextFactory,TDbContext_.TDbContextFactory 'Innago\.Shared\.ServiceTesting\.TestHelpers\.ServiceTestBaseBase\<TProgram,TDbContextFactory,TDbContext\>\.TDbContextFactory')[,](../ServiceTestFixtureBase_TProgram,TDbContextFactory,TDbContext_/index.md 'Innago\.Shared\.ServiceTesting\.TestHelpers\.ServiceTestFixtureBase\<TProgram,TDbContextFactory,TDbContext\>')[TDbContext](index.md#Innago.Shared.ServiceTesting.TestHelpers.ServiceTestBaseBase_TProgram,TDbContextFactory,TDbContext_.TDbContext 'Innago\.Shared\.ServiceTesting\.TestHelpers\.ServiceTestBaseBase\<TProgram,TDbContextFactory,TDbContext\>\.TDbContext')[&gt;](../ServiceTestFixtureBase_TProgram,TDbContextFactory,TDbContext_/index.md 'Innago\.Shared\.ServiceTesting\.TestHelpers\.ServiceTestFixtureBase\<TProgram,TDbContextFactory,TDbContext\>')

@@ -27,9 +27,15 @@
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(CI)' == 'true' ">
+        <DisableDefaultDocumentation>true</DisableDefaultDocumentation>
+    </PropertyGroup>
+
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
         <DocumentationFile>bin\Debug\net9.0\Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.xml</DocumentationFile>
         <NoWarn>1701;1702;RS0017</NoWarn>
+        <DefaultDocumentationFolder>docs</DefaultDocumentationFolder>
+        <DefaultDocumentationFileNameFactory>DirectoryName</DefaultDocumentationFileNameFactory>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -40,6 +46,10 @@
     <ItemGroup>
         <PackageReference Include="AwesomeAssertions" Version="9.1.0" />
         <PackageReference Include="AwesomeAssertions.Analyzers" Version="9.0.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="DefaultDocumentation" Version="1.2.0">
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>

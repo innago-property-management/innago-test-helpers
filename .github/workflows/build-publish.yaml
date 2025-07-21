@@ -8,9 +8,13 @@ on:
 
   workflow_dispatch:
     
-permissions: 
-  actions: read
+permissions:
+  attestations: write
+  packages: write
+  pull-requests: write
+  id-token: write
   contents: write
+  actions: write
 
 jobs:
   build:
@@ -27,4 +31,5 @@ jobs:
       packages: write
       pull-requests: write
       id-token: write
-      contents: read
+      contents: write
+      actions: write
