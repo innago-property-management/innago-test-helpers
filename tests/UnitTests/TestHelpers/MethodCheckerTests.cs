@@ -3,8 +3,8 @@ namespace UnitTests.TestHelpers;
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
-using FluentAssertions;
-using FluentAssertions.Specialized;
+using AwesomeAssertions;
+using AwesomeAssertions.Specialized;
 
 using JetBrains.Annotations;
 

@@ -3,7 +3,7 @@ namespace UnitTests.TestHelpers.OpenTelemetry;
 using System.Diagnostics;
 using System.Linq.Expressions;
 
-using FluentAssertions;
+using AwesomeAssertions;
 
 using global::OpenTelemetry.Trace;
 

@@ -6,7 +6,7 @@
   "Moq",
   "Moq.Analyzers",
   "NETStandard.Library",
-  "FluentAssertions",
+  "AwesomeAssertions",
   "Bogus",
   "MorseCode.ITask",
   "System.Private.Uri",
