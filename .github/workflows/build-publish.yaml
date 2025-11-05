@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
   workflow_dispatch:
-    
+
 permissions:
   attestations: write
   packages: write
@@ -17,13 +17,23 @@ permissions:
   actions: write
 
 jobs:
+  # Builds and publishes all 6 NuGet packages:
+  # - Innago.Shared.UnitTesting.TestHelpers (xUnit v2)
+  # - Innago.Shared.ServiceTesting.TestHelpers (xUnit v2)
+  # - Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry (xUnit v2)
+  # - Innago.Shared.UnitTesting.TestHelpers.v3 (xUnit v3)
+  # - Innago.Shared.ServiceTesting.TestHelpers.v3 (xUnit v3)
+  # - Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.v3 (xUnit v3)
+  #
+  # The v3 packages share source code with v2 packages via <Compile Include="...">
+  # in their .csproj files, so testing the v2 packages is sufficient.
   build:
     uses: innago-property-management/Oui-DELIVER/.github/workflows/build-publish.yml@main
     secrets:
       githubToken: ${{ secrets.ORG_NUGET_PUSH }}
       cosignKey: ${{ secrets.COSIGN_KEY }}
       cosignPassword: ${{ secrets.COSIGN_PASSWORD }}
-    with: 
+    with:
       minimumCoverage: 0
       testProjectPath: 'tests/UnitTests/UnitTests.csproj'
     permissions:
