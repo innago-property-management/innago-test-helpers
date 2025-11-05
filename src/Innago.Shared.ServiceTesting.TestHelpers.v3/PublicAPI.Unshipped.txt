@@ -1,0 +1,4 @@
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>.HttpClient.set -> void
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>.Services.get -> System.IServiceProvider!
+Innago.Shared.ServiceTesting.TestHelpers.ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>.WebApplicationFactory.get -> Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactory<TProgram!>!
+Innago.Shared.ServiceTesting.TestHelpers.TestDatabaseContextFactoryBase<TContext>.CreateDbContextAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<TContext!>!

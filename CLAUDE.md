@@ -4,22 +4,45 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This repository contains three NuGet packages providing test helper utilities for .NET 9.0 projects:
+This repository contains test helper utilities for .NET 9.0 projects, published as six NuGet packages supporting both xUnit v2 and xUnit v3:
+
+### xUnit v2 Packages (xunit 2.9.x)
 - `Innago.Shared.UnitTesting.TestHelpers` - Core unit testing utilities
 - `Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry` - OpenTelemetry testing utilities
 - `Innago.Shared.ServiceTesting.TestHelpers` - Service/integration testing utilities
 
+### xUnit v3 Packages (xunit.v3 3.1.x)
+- `Innago.Shared.UnitTesting.TestHelpers.v3` - Core unit testing utilities
+- `Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.v3` - OpenTelemetry testing utilities
+- `Innago.Shared.ServiceTesting.TestHelpers.v3` - Service/integration testing utilities
+
+The `.v3` packages share the same source code as their v2 counterparts but reference xUnit v3 instead of xUnit v2. They are built from wrapper projects that link to the original source files.
+
 ## Building and Testing
 
-### Build the project
+### Build all projects (v2 and v3)
 ```bash
 dotnet build
+```
+
+### Build only v2 packages
+```bash
+dotnet build --filter "!*.v3"
+```
+
+### Build only v3 packages
+```bash
+dotnet build src/Innago.Shared.UnitTesting.TestHelpers.v3/Innago.Shared.UnitTesting.TestHelpers.v3.csproj
+dotnet build src/Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.v3/Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.v3.csproj
+dotnet build src/Innago.Shared.ServiceTesting.TestHelpers.v3/Innago.Shared.ServiceTesting.TestHelpers.v3.csproj
 ```
 
 ### Run all tests
 ```bash
 dotnet test tests/UnitTests/UnitTests.csproj
 ```
+
+Note: Tests are currently built against v2 packages. The v3 packages share the same source code.
 
 ### Run a specific test
 ```bash
@@ -31,25 +54,35 @@ dotnet test tests/UnitTests/UnitTests.csproj --filter "FullyQualifiedName~Servic
 dotnet pack
 ```
 
-Packages are automatically generated on build when `GeneratePackageOnBuild` is true.
+This builds all 6 packages (3 v2 + 3 v3). Packages are automatically generated on build when `GeneratePackageOnBuild` is true.
 
 ## Architecture
 
 ### Project Structure
 
-- `src/Innago.Shared.UnitTesting.TestHelpers/` - Core test helpers
+The repository uses a dual-package approach to support both xUnit v2 and v3:
+
+#### xUnit v2 Source Projects
+- `src/Innago.Shared.UnitTesting.TestHelpers/` - Core test helpers (v2)
   - `ServiceVerifier.cs` - Verify DI service registration (type, lifetime, implementation)
   - `LogVerifier.cs` - Verify ILogger calls with Moq (level, message patterns, exceptions)
   - `PropertyChecker.cs` - Verify property characteristics (type, read/write, attributes, invariance)
   - `MethodChecker.cs` - Verify method signatures, parameters, exceptions, and mock usage
 
-- `src/Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry/` - OpenTelemetry helpers
+- `src/Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry/` - OpenTelemetry helpers (v2)
   - `TraceVerifier.cs` - In-memory trace collection and verification for Activity-based tests
 
-- `src/Innago.Shared.ServiceTesting.TestHelpers/` - Integration test base classes
+- `src/Innago.Shared.ServiceTesting.TestHelpers/` - Integration test base classes (v2)
   - `ServiceTestFixtureBase<TProgram, TDbContextFactory, TDbContext>` - Base fixture for service tests with WebApplicationFactory and in-memory database
   - `ServiceTestBaseBase<TProgram, TDbContextFactory, TDbContext>` - Base test class that uses ServiceTestFixtureBase
   - `TestDatabaseContextFactoryBase<TContext>` - Factory for creating in-memory EF Core DbContext instances
+
+#### xUnit v3 Wrapper Projects
+- `src/Innago.Shared.UnitTesting.TestHelpers.v3/` - Links to UnitTesting.TestHelpers source, references xUnit v3
+- `src/Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.v3/` - Links to OpenTelemetry source, references xUnit v3
+- `src/Innago.Shared.ServiceTesting.TestHelpers.v3/` - Links to ServiceTesting source, references xUnit v3
+
+The v3 projects use `<Compile Include="..\{OriginalProject}\**\*.cs" />` to include source files from their v2 counterparts, ensuring code consistency while targeting different xUnit versions.
 
 ### Key Design Patterns
 
@@ -116,14 +149,23 @@ public class ServiceVerifierTests
 
 ## Dependencies
 
-Key package dependencies across all projects:
-- **xUnit** 2.9.3 (moving to xUnit v3 based on branch name `feat/xunitv3`)
+### Common Dependencies (both v2 and v3)
 - **AwesomeAssertions** 9.3.0
 - **Moq** 4.20.72
 - **Microsoft.Extensions.*** packages at 9.0.10
-- **OpenTelemetry** 1.13.1 (OpenTelemetry package)
-- **Microsoft.AspNetCore.Mvc.Testing** 9.0.10 (ServiceTesting package)
-- **Microsoft.EntityFrameworkCore.InMemory** 9.0.10 (ServiceTesting package)
+- **OpenTelemetry** 1.13.1 (OpenTelemetry packages)
+- **Microsoft.AspNetCore.Mvc.Testing** 9.0.10 (ServiceTesting packages)
+- **Microsoft.EntityFrameworkCore.InMemory** 9.0.10 (ServiceTesting packages)
+
+### xUnit v2 Packages
+- **xunit** 2.9.3
+- **xunit.categories** (where applicable)
+
+### xUnit v3 Packages
+- **xunit.v3** 3.1.0
+- **xunit.categories** 3.0.1 (where applicable)
+
+The primary difference between v2 and v3 packages is the xUnit dependency version. All other dependencies remain the same.
 
 ## Target Framework
 

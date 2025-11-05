@@ -4,6 +4,9 @@
     <Project Path="src\Innago.Shared.ServiceTesting.TestHelpers\Innago.Shared.ServiceTesting.TestHelpers.csproj" Type="Classic C#" />
     <Project Path="src\Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry\Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.csproj" Type="Classic C#" />
     <Project Path="src\Innago.Shared.UnitTesting.TestHelpers\Innago.Shared.UnitTesting.TestHelpers.csproj" Type="Classic C#" />
+    <Project Path="src\Innago.Shared.ServiceTesting.TestHelpers.v3\Innago.Shared.ServiceTesting.TestHelpers.v3.csproj" Type="Classic C#" />
+    <Project Path="src\Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.v3\Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.v3.csproj" Type="Classic C#" />
+    <Project Path="src\Innago.Shared.UnitTesting.TestHelpers.v3\Innago.Shared.UnitTesting.TestHelpers.v3.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests\UnitTests\UnitTests.csproj" Type="Classic C#" />
