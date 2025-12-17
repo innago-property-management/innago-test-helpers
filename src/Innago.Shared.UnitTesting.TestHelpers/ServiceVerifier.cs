@@ -1,3 +1,5 @@
+// ReSharper disable ConvertToExtensionBlock
+
 namespace Innago.Shared.UnitTesting.TestHelpers;
 
 using System;

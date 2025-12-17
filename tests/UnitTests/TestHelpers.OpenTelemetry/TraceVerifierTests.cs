@@ -1,7 +1,6 @@
 namespace UnitTests.TestHelpers.OpenTelemetry;
 
 using System.Diagnostics;
-using System.Linq.Expressions;
 
 using AwesomeAssertions;
 
@@ -10,7 +9,6 @@ using global::OpenTelemetry.Trace;
 using Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry;
 
 using Xunit;
-using Xunit.Categories;
 
 [UnitTest(nameof(TraceVerifier))]
 public class TraceVerifierTests
@@ -43,6 +41,6 @@ internal static class MyTraceable
 {
     public static void SomeMethod(Tracer tracer, string name)
     {
-        using TelemetrySpan? _ = tracer.StartActiveSpan(name);
+        using TelemetrySpan _ = tracer.StartActiveSpan(name);
     }
 }

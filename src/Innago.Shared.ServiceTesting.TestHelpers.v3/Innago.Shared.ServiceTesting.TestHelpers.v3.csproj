@@ -74,6 +74,7 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+        <PackageReference Include="Xunit.OpenCategories.V3" Version="2.3.2.15" />
         <PackageReference Include="xunit.v3.extensibility.core" Version="3.2.1" />
     </ItemGroup>
 

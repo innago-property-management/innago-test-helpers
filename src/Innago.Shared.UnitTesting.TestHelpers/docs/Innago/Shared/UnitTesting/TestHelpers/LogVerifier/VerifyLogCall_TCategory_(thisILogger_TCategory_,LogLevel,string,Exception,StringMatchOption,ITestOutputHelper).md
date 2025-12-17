@@ -66,6 +66,6 @@ instance.DoSomething();
 
 logger.VerifyLogCall(
     LogLevel.Information,
-    "MyClass: ",
+    "MyClass:",
     matchOption: LogVerifier.StringMatchOption.StartsWith);
 ```
