@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFrameworks>net9.0;net10.0</TargetFrameworks>
         <RootNamespace>Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry</RootNamespace>
         <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
         <FileVersion>0.1.0</FileVersion>
@@ -10,12 +10,12 @@
         <Version>0.1.0</Version>
         <Title>Unit Testing Helpers</Title>
         <Authors>Innago</Authors>
-        <RepositoryUrl>https://bitbucket.org/Innagoinc/Innago.shared.unittesting</RepositoryUrl>
+        <RepositoryUrl>https://github.com/innago-property-management/innago-test-helpers</RepositoryUrl>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageId>Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry</PackageId>
         <Description>Utility methods for TDD</Description>
         <Copyright>Copyright 2023 Innago</Copyright>
-        <PackageProjectUrl>https://bitbucket.org/Innagoinc/Innago.shared.unittesting/src/main/src/Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry/</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/innago-property-management/innago-test-helpers</PackageProjectUrl>
         <PackageTags>xunit;opentelemetry</PackageTags>
         <AssemblyName>Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry</AssemblyName>
         <RuntimeIdentifiers>win-x64;osx-x64;osx-arm64;linux-arm64;linux-x64</RuntimeIdentifiers>
@@ -32,7 +32,7 @@
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-        <DocumentationFile>bin\Debug\net9.0\Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.xml</DocumentationFile>
+        <DocumentationFile>bin\Debug\Innago.Shared.UnitTesting.TestHelpers.OpenTelemetry.xml</DocumentationFile>
         <NoWarn>1701;1702;RS0017</NoWarn>
         <DefaultDocumentationFolder>docs</DefaultDocumentationFolder>
         <DefaultDocumentationFileNameFactory>DirectoryName</DefaultDocumentationFileNameFactory>
@@ -53,7 +53,7 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="JetBrains.Annotations" Version="2025.2.2" />
+        <PackageReference Include="JetBrains.Annotations" Version="2025.2.4" />
         <PackageReference Include="Microsoft.CodeAnalysis.BannedApiAnalyzers" Version="4.14.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -62,20 +62,14 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.10" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.10" />
-        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.10" />
-        <PackageReference Include="OpenTelemetry.Exporter.InMemory" Version="1.13.1" />
-        <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.13.1" />
-        <PackageReference Include="SonarAnalyzer.CSharp" Version="10.15.0.120848">
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.1" />
+        <PackageReference Include="OpenTelemetry.Exporter.InMemory" Version="1.14.0" />
+        <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.14.0" />
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="10.17.0.131074">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-        <PackageReference Include="System.Net.Http" Version="4.3.4" />
-        <PackageReference Include="System.Private.Uri" Version="4.3.2" />
-        <PackageReference Include="System.Text.Json" Version="9.0.10" />
-        <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
         <PackageReference Include="xunit" Version="2.9.3" />
     </ItemGroup>
 
