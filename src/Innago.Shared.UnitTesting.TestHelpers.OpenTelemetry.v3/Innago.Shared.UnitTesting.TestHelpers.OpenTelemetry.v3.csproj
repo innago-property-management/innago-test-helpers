@@ -54,7 +54,7 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="JetBrains.Annotations" Version="2025.2.2" />
+        <PackageReference Include="JetBrains.Annotations" Version="2025.2.4" />
         <PackageReference Include="Microsoft.CodeAnalysis.BannedApiAnalyzers" Version="4.14.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -63,15 +63,15 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.10" />
-        <PackageReference Include="OpenTelemetry.Exporter.InMemory" Version="1.13.1" />
-        <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.13.1" />
-        <PackageReference Include="SonarAnalyzer.CSharp" Version="10.15.0.120848">
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.1" />
+        <PackageReference Include="OpenTelemetry.Exporter.InMemory" Version="1.14.0" />
+        <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.14.0" />
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="10.17.0.131074">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-        <PackageReference Include="xunit.v3.extensibility.core" Version="3.2.0" />
+        <PackageReference Include="xunit.v3.extensibility.core" Version="3.2.1" />
     </ItemGroup>
 
     <ItemGroup>
