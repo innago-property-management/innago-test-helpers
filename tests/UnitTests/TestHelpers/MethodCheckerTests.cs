@@ -12,8 +12,6 @@ using Moq;
 
 using Innago.Shared.UnitTesting.TestHelpers;
 
-using Xunit;
-using Xunit.Categories;
 using Xunit.Sdk;
 
 using static Innago.Shared.UnitTesting.TestHelpers.MethodChecker;

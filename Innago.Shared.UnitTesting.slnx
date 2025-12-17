@@ -9,6 +9,7 @@
     <Project Path="src\Innago.Shared.UnitTesting.TestHelpers.v3\Innago.Shared.UnitTesting.TestHelpers.v3.csproj" Type="C#" />
   </Folder>
   <Folder Name="/tests/">
+    <Project Path="tests/UnitTests.v3/UnitTests.v3.csproj" />
     <Project Path="tests\UnitTests\UnitTests.csproj" Type="C#" />
   </Folder>
 </Solution>

@@ -11,8 +11,6 @@ using Microsoft.Extensions.Logging;
 
 using Moq;
 
-using Xunit.Abstractions;
-
 /// <summary>
 ///     Verifies that a message is logged.
 /// </summary>
@@ -85,7 +83,7 @@ public static class LogVerifier
     /// 
     /// logger.VerifyLogCall(
     ///     LogLevel.Information,
-    ///     "MyClass: ",
+    ///     "MyClass:",
     ///     matchOption: LogVerifier.StringMatchOption.StartsWith);
     /// </code>
     /// </example>

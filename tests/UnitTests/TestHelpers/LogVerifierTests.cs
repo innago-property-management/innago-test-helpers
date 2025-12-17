@@ -1,17 +1,9 @@
 namespace UnitTests.TestHelpers;
 
-using AwesomeAssertions;
-
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 
-using Moq;
-
 using Innago.Shared.UnitTesting.TestHelpers;
-
-using Xunit;
-using Xunit.Abstractions;
-using Xunit.Categories;
 
 [UnitTest(nameof(LogVerifier))]
 public class LogVerifierTests

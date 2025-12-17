@@ -69,13 +69,19 @@
         </PackageReference>
         <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
         <PackageReference Include="xunit.v3.extensibility.core" Version="3.2.1" />
-        <PackageReference Include="xunit.categories" Version="3.0.1" />
         <PackageReference Include="prometheus-net.AspNetCore" Version="8.2.1" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.1" />
     </ItemGroup>
 
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net9.0'">
+        <PackageReference Include="Xunit.OpenCategories.V3" Version="2.3.2.15" />
+    </ItemGroup>
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net10.0'">
+        <PackageReference Include="Xunit.OpenCategories.V3" Version="2.3.2.15" />
+    </ItemGroup>
+
     <ItemGroup>
-        <Compile Include="..\Innago.Shared.UnitTesting.TestHelpers\**\*.cs" Exclude="..\Innago.Shared.UnitTesting.TestHelpers\obj\**;..\Innago.Shared.UnitTesting.TestHelpers\bin\**" />
+        <Compile Include="..\Innago.Shared.UnitTesting.TestHelpers\**\*.cs" Exclude="..\Innago.Shared.UnitTesting.TestHelpers\obj\**;..\Innago.Shared.UnitTesting.TestHelpers\bin\**;..\Innago.Shared.UnitTesting.TestHelpers\GlobalUsings.cs" />
     </ItemGroup>
 
     <ItemGroup>

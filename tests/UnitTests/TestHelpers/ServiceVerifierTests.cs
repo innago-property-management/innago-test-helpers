@@ -7,7 +7,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Innago.Shared.UnitTesting.TestHelpers;
 
 using Xunit;
-using Xunit.Categories;
 using Xunit.Sdk;
 
 [UnitTest(nameof(ServiceVerifier))]

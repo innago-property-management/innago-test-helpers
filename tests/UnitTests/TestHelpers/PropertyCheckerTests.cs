@@ -9,7 +9,6 @@ using AwesomeAssertions;
 using Innago.Shared.UnitTesting.TestHelpers;
 
 using Xunit;
-using Xunit.Categories;
 using Xunit.Sdk;
 
 [UnitTest(nameof(PropertyChecker))]
