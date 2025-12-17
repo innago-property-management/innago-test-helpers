@@ -57,3 +57,5 @@ All packages are available in both v2 and v3 variants:
 [Service/Integration Testing Test Helpers](src/Innago.Shared.ServiceTesting.TestHelpers/docs/Innago.Shared.ServiceTesting.TestHelpers.md)
 
 [Migration Guide (v2 to v3)](MIGRATION.md)
+
+<!-- 2025-12-174 -->
