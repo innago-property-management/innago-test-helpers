@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFrameworks>net9.0;net10.0</TargetFrameworks>
         <RootNamespace>Innago.Shared.UnitTesting.TestHelpers</RootNamespace>
         <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
         <FileVersion>0.1.0</FileVersion>
@@ -10,13 +10,13 @@
         <Version>0.1.0</Version>
         <Title>Unit Testing Helpers</Title>
         <Authors>Innago</Authors>
-        <RepositoryUrl>https://bitbucket.org/Innagoinc/Innago.shared.unittesting</RepositoryUrl>
+        <RepositoryUrl>https://github.com/innago-property-management/innago-test-helpers</RepositoryUrl>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageId>Innago.Shared.UnitTesting.TestHelpers</PackageId>
         <Description>Utility methods for TDD</Description>
         <Copyright>Copyright 2023 Innago</Copyright>
-        <PackageProjectUrl>https://bitbucket.org/Innagoinc/Innago.shared.unittesting/src/main/src/Innago.Shared.UnitTesting.TestHelpers/</PackageProjectUrl>
-        <PackageTags>https://bitbucket.org/Innagoinc/Innago.shared.unittesting</PackageTags>
+        <PackageProjectUrl>https://github.com/innago-property-management/innago-test-helpers</PackageProjectUrl>
+        <PackageTags>xunit;testing;unit-testing;tdd;helpers;innago</PackageTags>
         <AssemblyName>Innago.Shared.UnitTesting.TestHelpers</AssemblyName>
         <RuntimeIdentifiers>win-x64;osx-x64;osx-arm64;linux-arm64;linux-x64</RuntimeIdentifiers>
         <Nullable>enable</Nullable>
@@ -67,9 +67,6 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-        <PackageReference Include="System.Net.Http" Version="4.3.4" />
-        <PackageReference Include="System.Private.Uri" Version="4.3.2" />
-        <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
         <PackageReference Include="xunit" Version="2.9.3" />
         <PackageReference Include="prometheus-net.AspNetCore" Version="8.2.1" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.10" />
