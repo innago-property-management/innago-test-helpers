@@ -40,7 +40,7 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="OpenTelemetry.Api" Version="1.14.0" />
+        <PackageReference Include="OpenTelemetry.Api" Version="1.15.3" />
         <PackageReference Include="prometheus-net.AspNetCore" Version="8.2.1" />
         <PackageReference Include="SonarAnalyzer.CSharp" Version="10.17.0.131074">
           <PrivateAssets>all</PrivateAssets>
